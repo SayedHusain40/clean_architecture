@@ -1,8 +1,8 @@
 
 import 'package:dio/dio.dart';
-import 'package:clean_architecture/core/databases/api/api_client.dart';
-import 'package:clean_architecture/core/databases/api/api_interceptors.dart';
-import 'package:clean_architecture/core/databases/api/end_points.dart';
+import 'package:clean_architecture/core/network/api/api_client.dart';
+import 'package:clean_architecture/core/network/api/api_interceptors.dart';
+import 'package:clean_architecture/core/network/api/end_points.dart';
 import 'package:clean_architecture/core/errors/exceptions.dart';
 
 class DioApiClient extends ApiClient {

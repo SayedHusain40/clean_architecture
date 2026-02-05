@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:clean_architecture/core/databases/cache/cache_helper.dart';
+import 'package:clean_architecture/core/cache/cache_helper.dart';
 import 'package:clean_architecture/core/errors/exceptions.dart';
 import 'package:clean_architecture/features/user/data/models/user_model.dart';
 
@@ -19,7 +19,7 @@ class UserLocalDataSource {
   }
 
   Future<UserModel> getCachedUser() async {
-    final jsonString = cache.getDataString(key: key);
+    final jsonString = cache.getString(key: key);
     if (jsonString != null) {
       return UserModel.fromJson(json.decode(jsonString));
     } else {

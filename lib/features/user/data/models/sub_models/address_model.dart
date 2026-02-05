@@ -1,5 +1,5 @@
-import 'package:clean_architecture/core/databases/api/end_points.dart';
-import 'package:clean_architecture/features/user/domain/entities/sub_entities/address_entity.dart';
+import 'package:clean_architecture/core/network/api/end_points.dart';
+import 'package:clean_architecture/features/user/domain/entities/address_entity.dart';
 
 class AddressModel extends AddressEntity {
   const AddressModel({required super.home});

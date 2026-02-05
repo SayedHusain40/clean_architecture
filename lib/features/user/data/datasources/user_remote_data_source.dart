@@ -1,5 +1,5 @@
-import 'package:clean_architecture/core/databases/api/api_client.dart';
-import 'package:clean_architecture/core/databases/api/end_points.dart';
+import 'package:clean_architecture/core/network/api/api_client.dart';
+import 'package:clean_architecture/core/network/api/end_points.dart';
 import 'package:clean_architecture/core/params/user_params.dart';
 import 'package:clean_architecture/features/user/data/models/user_model.dart';
 

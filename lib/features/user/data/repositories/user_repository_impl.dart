@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:clean_architecture/core/connection/network_info.dart';
+import 'package:clean_architecture/core/network/connection/network_info.dart';
 import 'package:clean_architecture/core/errors/exceptions.dart';
 import 'package:clean_architecture/core/errors/failure.dart';
 import 'package:clean_architecture/core/params/user_params.dart';
@@ -31,7 +31,7 @@ class UserRepositoryImpl extends UserRepository {
       } on ServerException catch (e) {
         return Left(Failure(errorMessage: e.errorModel.message));
       } catch (e) {
-        return Left(Failure(errorMessage: 'Unexpected Error'));
+        return Left(Failure(errorMessage: e.toString()));
       }
     } else {
       try {
@@ -40,7 +40,7 @@ class UserRepositoryImpl extends UserRepository {
       } on CacheException catch (e) {
         return Left(Failure(errorMessage: e.errorMessage));
       } catch (e) {
-        return Left(Failure(errorMessage: 'Unexpected Error'));
+        return Left(Failure(errorMessage: e.toString()));
       }
     }
   }

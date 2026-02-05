@@ -1,4 +1,4 @@
-import 'package:clean_architecture/core/databases/api/end_points.dart';
+import 'package:clean_architecture/core/network/api/end_points.dart';
 import 'package:clean_architecture/features/user/domain/entities/user_entity.dart';
 
 class UserModel extends UserEntity {

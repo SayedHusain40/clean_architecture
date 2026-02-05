@@ -1,4 +1,4 @@
-import 'package:clean_architecture/core/databases/api/end_points.dart';
+import 'package:clean_architecture/core/network/api/end_points.dart';
 
 class ErrorModel {
   final int code;

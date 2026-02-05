@@ -72,7 +72,7 @@ class _UserScreenState extends State<UserScreen> {
 
                   ElevatedButton(
                     onPressed: () {
-                      context.read<UserCubit>().eitherFailureOrUser(
+                      context.read<UserCubit>().getUserById(
                         currentUserID.toInt(),
                       );
                     },
@@ -84,7 +84,7 @@ class _UserScreenState extends State<UserScreen> {
                       setState(() {
                         currentUserID = 1;
                       });
-                      context.read<UserCubit>().eitherFailureOrUser(1);
+                      context.read<UserCubit>().getUserById(1);
                     },
                     child: Text('Restart'),
                   ),
